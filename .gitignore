@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
+.cache/
+
+# Do NOT ignore manifest.json files — they MUST be committed!
+!**/manifest.json

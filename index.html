@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="هیئت ثارالله — مراسم عزاداری سید و سالار شهیدان حضرت اباعبدالله الحسین (ع). آرشیو مداحی‌ها، سخنرانی‌ها، تصاویر و ویدئوهای مراسم عزاداری." />
+  <meta name="keywords" content="ثارالله, هیئت, محرم, عاشورا, امام حسین, مداحی, سخنرانی, کربلا" />
+  <meta name="author" content="هیئت ثارالله" />
+  <meta property="og:title" content="هیئت ثارالله" />
+  <meta property="og:description" content="مراسم عزاداری سید و سالار شهیدان حضرت اباعبدالله الحسین (ع)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fa_IR" />
+  <title>هیئت ثارالله | مراسم عزاداری محرم</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            black:    { DEFAULT: '#0A0A0A', soft: '#141414' },
+            blood:    { DEFAULT: '#8B0000', deep: '#5A0011', light: '#A91B3D' },
+            crimson:  { DEFAULT: '#9F1239', deep: '#7A0D2A' },
+            gold:     { DEFAULT: '#D4AF37', dark: '#B8860B', deeper: '#8B6914', light: '#F7E8A8', soft: '#E8C547' },
+            cream:    { DEFAULT: '#F5ECD9', soft: '#FAF6EC' },
+            paper:    { DEFAULT: '#F8F4ED', soft: '#FBF8F2' },
+            ink:      { DEFAULT: '#1A1A1A', muted: '#3A3A3A', light: '#5A5A5A' },
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'Tahoma', 'system-ui', 'sans-serif'],
+            display: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+            calligraphy: ['Gulzar', 'Vazirmatn', 'serif'],
+          },
+          animation: {
+            'float-slow': 'float 8s ease-in-out infinite',
+            'shimmer': 'shimmer 3s linear infinite',
+            'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
+            'fade-up': 'fadeUp 0.8s ease-out forwards',
+            'gradient-shift': 'gradientShift 12s ease infinite',
+          },
+          keyframes: {
+            float: { '0%,100%': { transform: 'translateY(0) translateX(0)' }, '50%': { transform: 'translateY(-20px) translateX(10px)' } },
+            shimmer: { '0%': { backgroundPosition: '0% center' }, '100%': { backgroundPosition: '200% center' } },
+            pulseGlow: { '0%,100%': { boxShadow: '0 0 20px rgba(212,175,55,0.3)' }, '50%': { boxShadow: '0 0 40px rgba(212,175,55,0.6)' } },
+            fadeUp: { from: { opacity: 0, transform: 'translateY(30px)' }, to: { opacity: 1, transform: 'translateY(0)' } },
+            gradientShift: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Gulzar&display=swap" rel="stylesheet" />
+
+  <!-- Lucide icons (SVG) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-black text-cream font-sans antialiased">
+
+  <!-- ============================================
+       Progress bar (top of page)
+       ============================================ -->
+  <div class="fixed top-0 inset-x-0 h-1 z-[60] origin-right scale-x-0 bg-gradient-to-l from-gold via-blood to-crimson" id="progressBar"></div>
+
+
+  <!-- ============================================
+       Animated Navbar
+       ============================================ -->
+  <nav id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+    <!-- Top thin marquee strip -->
+    <div id="topMarquee" class="overflow-hidden border-b border-gold/20 bg-gradient-to-l from-blood/30 via-black to-blood/30 transition-all duration-500">
+      <div class="marquee-track py-1.5 text-[11px] sm:text-xs text-gold-light whitespace-nowrap" style="animation: marqueeRTL 30s linear infinite;">
+        <span class="mx-6 inline-flex items-center gap-2"><span class="text-gold/60">✦</span> السلام علیک یا اباعبدالله الحسین <span class="text-gold/60">✦</span></span>
+        <span class="mx-6 inline-flex items-center gap-2"><span class="text-gold/60">✦</span> یا ثارالله <span class="text-gold/60">✦</span></span>
+        <span class="mx-6 inline-flex items-center gap-2"><span class="text-gold/60">✦</span> السلام علیک یا اباعبدالله الحسین <span class="text-gold/60">✦</span></span>
+        <span class="mx-6 inline-flex items-center gap-2"><span class="text-gold/60">✦</span> یا ثارالله <span class="text-gold/60">✦</span></span>
+      </div>
+    </div>
+
+    <!-- Main nav bar -->
+    <div id="navMain" class="backdrop-blur-md transition-all duration-500 bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+          <!-- Logo (typography only — no logo images) -->
+          <a href="#hero" class="group flex items-center gap-3" aria-label="هیئت ثارالله">
+            <span class="grid place-items-center w-11 h-11 rounded-full border border-gold/40 bg-black/60 text-gold transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_18px_rgba(212,175,55,0.45)]">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4" r="1.5"/>
+                <path d="M12 6v15"/>
+                <path d="M12 9l-4 2.5L12 14l4-2.5z" fill="currentColor" fill-opacity="0.3"/>
+                <path d="M12 14l-3 2L12 18l3-2z" fill="currentColor" fill-opacity="0.2"/>
+              </svg>
+            </span>
+            <span class="flex flex-col leading-tight">
+              <span class="font-calligraphy text-2xl text-gold-light transition-colors group-hover:text-gold">هیئت ثارالله</span>
+              <span class="text-[10px] tracking-wider text-cream/60">مراسم عزاداری محرم</span>
+            </span>
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden lg:flex items-center gap-1">
+            <a href="#hero"        class="nav-link">خانه</a>
+            <a href="#about"       class="nav-link">درباره هیئت</a>
+            <a href="#activities"  class="nav-link">فعالیت‌ها</a>
+            <a href="#media"       class="nav-link">رسانه</a>
+            <a href="#location"    class="nav-link">لوکیشن</a>
+            <a href="#announcements" class="nav-link">اطلاع‌رسانی</a>
+            <a href="#contact"     class="nav-link">ارتباط با ما</a>
+          </div>
+
+          <!-- Right: social + CTA -->
+          <div class="hidden lg:flex items-center gap-2">
+            <a href="#" aria-label="تلگرام" class="icon-btn"><i data-lucide="send" class="w-4 h-4"></i></a>
+            <a href="#" aria-label="اینستاگرام" class="icon-btn"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#media" class="cta-btn">
+              <i data-lucide="play-circle" class="w-4 h-4"></i>
+              <span>گالری رسانه</span>
+            </a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button id="menuToggle" class="lg:hidden grid place-items-center w-11 h-11 rounded-lg border border-gold/30 text-gold-light" aria-label="منو">
+            <i data-lucide="menu" class="w-5 h-5" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden fixed inset-0 z-40 hidden">
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" id="mobileMenuBackdrop"></div>
+    <div class="absolute top-0 right-0 bottom-0 w-72 max-w-[80vw] bg-gradient-to-b from-black-soft to-black border-l border-gold/30 p-6 pt-24 overflow-y-auto">
+      <div class="flex flex-col gap-1">
+        <a href="#hero"        class="mobile-link">خانه</a>
+        <a href="#about"       class="mobile-link">درباره هیئت</a>
+        <a href="#activities"  class="mobile-link">فعالیت‌ها</a>
+        <a href="#media"       class="mobile-link">رسانه</a>
+        <a href="#location"    class="mobile-link">لوکیشن</a>
+        <a href="#announcements" class="mobile-link">اطلاع‌رسانی</a>
+        <a href="#contact"     class="mobile-link">ارتباط با ما</a>
+      </div>
+      <div class="mt-8 pt-6 border-t border-gold/20">
+        <div class="flex items-center gap-3 mb-4">
+          <a href="#" aria-label="تلگرام" class="icon-btn"><i data-lucide="send" class="w-4 h-4"></i></a>
+          <a href="#" aria-label="اینستاگرام" class="icon-btn"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" aria-label="ایمیل" class="icon-btn"><i data-lucide="mail" class="w-4 h-4"></i></a>
+        </div>
+        <p class="font-calligraphy text-lg text-gold">السلام علیک یا ثارالله</p>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- ============================================
+         Hero Section
+         ============================================ -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Background layers -->
+      <div class="absolute inset-0 spotlight-bg"></div>
+      <div class="absolute inset-0 pattern-overlay opacity-[0.04]"></div>
+
+      <!-- Floating ornaments -->
+      <div class="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-blood/10 blur-3xl animate-float-slow"></div>
+      <div class="absolute bottom-1/4 left-10 w-40 h-40 rounded-full bg-gold/10 blur-3xl animate-float-slow" style="animation-delay: -4s"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <p class="hero-eyebrow text-gold text-sm sm:text-base tracking-[0.2em] mb-6 opacity-0" data-animate>بسم الله الرحمن الرحیم</p>
+
+        <div class="flex items-center justify-center gap-4 mb-4 opacity-0" data-animate>
+          <span class="h-px w-16 bg-gradient-to-l from-transparent to-gold"></span>
+          <span class="text-gold-light text-xl">✦</span>
+          <span class="h-px w-16 bg-gradient-to-r from-transparent to-gold"></span>
+        </div>
+
+        <h1 class="hero-title font-calligraphy text-6xl sm:text-7xl md:text-8xl text-gold-light leading-tight mb-6 opacity-0" data-animate>
+          هیئت ثارالله
+        </h1>
+
+        <p class="hero-tagline text-lg sm:text-xl md:text-2xl text-cream/90 mb-4 opacity-0" data-animate>
+          مراسم عزاداری سید و سالار شهیدان
+        </p>
+        <p class="hero-tagline-2 text-base sm:text-lg text-gold/90 mb-8 opacity-0" data-animate>
+          حضرت اباعبدالله الحسین (ع)
+        </p>
+
+        <p class="hero-description text-sm sm:text-base text-cream/70 max-w-2xl mx-auto mb-10 leading-loose opacity-0" data-animate>
+          این پایگاه، مرجعی برای انتشار مداحی‌ها، سخنرانی‌ها، تصاویر و ویدئوهای مراسم عزاداری هیئت ثارالله است.
+          با آرزوی قبولی طاعات و عبادات در این ایام عزاداری.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0" data-animate>
+          <a href="#media" class="btn-primary group">
+            <i data-lucide="play-circle" class="w-5 h-5"></i>
+            <span>ورود به گالری رسانه</span>
+            <i data-lucide="arrow-left" class="w-4 h-4 transition-transform group-hover:-translate-x-1"></i>
+          </a>
+          <a href="#announcements" class="btn-outline">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            <span>برنامه‌های پیش‌رو</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-cream/60 hover:text-gold transition-colors group">
+        <span class="text-xs">اسکرول کنید</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 animate-bounce"></i>
+      </a>
+    </section>
+
+
+    <!-- ============================================
+         About Section (درباره هیئت)
+         ============================================ -->
+    <section id="about" class="relative py-24 sm:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black-soft to-black"></div>
+      <div class="absolute inset-0 pattern-overlay opacity-[0.025]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-eyebrow opacity-0" data-animate>معرفی</span>
+          <h2 class="section-title opacity-0" data-animate>درباره هیئت</h2>
+          <p class="section-subtitle opacity-0" data-animate>آشنایی با رسالت و تاریخچه هیئت ثارالله</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left: text -->
+          <div class="opacity-0" data-animate>
+            <h3 class="font-display text-2xl sm:text-3xl text-gold-light mb-6 leading-snug">
+              هیئتی که از دل عشق به اهل‌بیت برخاست
+            </h3>
+            <p class="text-cream/80 mb-4 leading-loose">
+              هیئت ثارالله با هدف احیای مراسم عزاداری سید و سالار شهیدان حضرت اباعبدالله الحسین (ع)
+              و ترویج فرهنگ عاشورا تأسیس شده است. این هیئت در طول سال، به‌ویژه در ماه محرم و صفر،
+              میزبان عزاداران و محبان اهل‌بیت (ع) است.
+            </p>
+            <p class="text-cream/80 mb-8 leading-loose">
+              مراسم ما شامل روضه‌خوانی، سینه‌زنی، سخنرانی‌های معنوی، و پخش نذری است. هدف ما حفظ
+              زنده نگه‌داشتن یاد شهدای کربلا و انتقال پیام قیام امام حسین (ع) به نسل‌های جوان است.
+            </p>
+
+            <div class="grid grid-cols-3 gap-4">
+              <div class="stat-card">
+                <div class="stat-number">۲۰+</div>
+                <div class="stat-label">سال فعالیت</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">۵۰+</div>
+                <div class="stat-label">برنامه سالانه</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">۱۰۰۰+</div>
+                <div class="stat-label">عزادار</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: visual card -->
+          <div class="relative opacity-0" data-animate>
+            <div class="glass-card rounded-2xl p-1 overflow-hidden">
+              <div class="rounded-xl bg-gradient-to-br from-black-soft to-black p-8 lg:p-12 relative overflow-hidden">
+                <div class="absolute top-4 right-4 text-gold/30 text-6xl font-calligraphy">۝</div>
+                <div class="relative z-10">
+                  <p class="font-calligraphy text-3xl text-gold-light mb-6 leading-relaxed">
+                    «إِنْ لَمْ تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ»
+                  </p>
+                  <p class="text-cream/70 text-sm leading-loose mb-6">
+                    اگر یاری‌اش نکنید، البته خدا او را یاری کرد. قرآن کریم — سوره توبه، آیه ۴۰
+                  </p>
+                  <div class="h-px bg-gradient-to-l from-transparent via-gold/40 to-transparent my-6"></div>
+                  <p class="text-cream/80 leading-loose">
+                    پیام قیام امام حسین (ع)، الگویی جاودانه برای آزادی‌خواهان جهان است. ما در هیئت
+                    ثارالله، این پیام را با زبان امروز و برای نسل امروز بازتولید می‌کنیم.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         Activities Section (فعالیت‌ها)
+         ============================================ -->
+    <section id="activities" class="relative py-24 sm:py-32 bg-paper text-ink overflow-hidden">
+      <div class="absolute inset-0 pattern-overlay-light opacity-[0.04]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-eyebro-light opacity-0" data-animate>فعالیت‌های هیئت</span>
+          <h2 class="section-title-light opacity-0" data-animate>برنامه‌های ما</h2>
+          <p class="section-subtitle-light opacity-0" data-animate>خدمات فرهنگی و معنوی هیئت ثارالله</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Activity 1 -->
+          <div class="activity-card opacity-0" data-animate>
+            <div class="activity-icon">
+              <i data-lucide="book-open" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-display text-xl text-crimson-deep mb-2 font-bold">روضه‌خوانی</h3>
+            <p class="text-ink-muted text-sm leading-relaxed">
+              روضه‌خوانی به یاد شهدای کربلا با حضور برترین مداحان اهل‌بیت.
+            </p>
+          </div>
+
+          <!-- Activity 2 -->
+          <div class="activity-card opacity-0" data-animate>
+            <div class="activity-icon">
+              <i data-lucide="users" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-display text-xl text-crimson-deep mb-2 font-bold">سینه‌زنی</h3>
+            <p class="text-ink-muted text-sm leading-relaxed">
+              آیین سینه‌زنی دسته‌جمعی به یاد حضرت اباعبدالله الحسین (ع) و یارانش.
+            </p>
+          </div>
+
+          <!-- Activity 3 -->
+          <div class="activity-card opacity-0" data-animate>
+            <div class="activity-icon">
+              <i data-lucide="mic" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-display text-xl text-crimson-deep mb-2 font-bold">سخنرانی</h3>
+            <p class="text-ink-muted text-sm leading-relaxed">
+              سخنرانی‌های معنوی درباره پیام عاشورا و سیره اهل‌بیت (ع).
+            </p>
+          </div>
+
+          <!-- Activity 4 -->
+          <div class="activity-card opacity-0" data-animate>
+            <div class="activity-icon">
+              <i data-lucide="utensils" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-display text-xl text-crimson-deep mb-2 font-bold">پذیرایی نذری</h3>
+            <p class="text-ink-muted text-sm leading-relaxed">
+              توزیع نذری و ضیافت برای عزاداران و مهمانان هیئت در همه برنامه‌ها.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         Media Gallery Section (unified)
+         ============================================ -->
+    <section id="media" class="relative py-24 sm:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black-soft to-black"></div>
+      <div class="absolute inset-0 pattern-overlay opacity-[0.025]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="section-eyebrow opacity-0" data-animate>آرشیو</span>
+          <h2 class="section-title opacity-0" data-animate>گالری رسانه</h2>
+          <p class="section-subtitle opacity-0" data-animate>تصاویر، ویدئوها، مداحی‌ها و سخنرانی‌ها — همه در یک جا</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10 opacity-0" data-animate>
+          <button class="filter-tab active" data-filter="all">
+            <i data-lucide="layout-grid" class="w-4 h-4"></i>
+            <span>همه</span>
+          </button>
+          <button class="filter-tab" data-filter="image">
+            <i data-lucide="image" class="w-4 h-4"></i>
+            <span>تصاویر</span>
+          </button>
+          <button class="filter-tab" data-filter="video">
+            <i data-lucide="film" class="w-4 h-4"></i>
+            <span>ویدئو</span>
+          </button>
+          <button class="filter-tab" data-filter="audio">
+            <i data-lucide="music" class="w-4 h-4"></i>
+            <span>مداحی</span>
+          </button>
+          <button class="filter-tab" data-filter="speech">
+            <i data-lucide="mic" class="w-4 h-4"></i>
+            <span>سخنرانی</span>
+          </button>
+        </div>
+
+        <!-- Media grid -->
+        <div id="mediaGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="col-span-full loading-placeholder">
+            <div class="spinner mx-auto"></div>
+            <p>در حال بارگذاری رسانه‌ها...</p>
+          </div>
+        </div>
+
+        <!-- Now Playing Bar (sticky within section for audio) -->
+        <div id="nowPlayingBar" class="hidden sticky bottom-4 mt-8 z-30">
+          <div class="glass-card rounded-2xl p-4 flex items-center gap-4">
+            <div id="npCover" class="grid place-items-center w-14 h-14 rounded-lg bg-gradient-to-br from-blood to-crimson text-gold-light text-2xl flex-shrink-0">
+              <i data-lucide="music" class="w-6 h-6"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div id="npTitle" class="text-gold-light font-semibold text-sm truncate">—</div>
+              <div id="npMeta" class="text-cream/60 text-xs">—</div>
+              <div class="flex items-center gap-2 mt-1">
+                <span id="npCurrent" class="text-[10px] text-cream/60 font-mono">۰:۰۰</span>
+                <div id="npTrack" class="flex-1 h-1.5 bg-gold/20 rounded-full cursor-pointer relative">
+                  <div id="npFill" class="h-full bg-gradient-to-l from-gold to-gold-light rounded-full" style="width:0%"></div>
+                </div>
+                <span id="npDuration" class="text-[10px] text-cream/60 font-mono">۰:۰۰</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <button id="npPrev" class="np-icon-btn" aria-label="قبلی"><i data-lucide="skip-forward" class="w-5 h-5"></i></button>
+              <button id="npPlayPause" class="np-icon-btn-main" aria-label="پخش/توقف"><i data-lucide="play" class="w-6 h-6" id="playPauseIcon"></i></button>
+              <button id="npNext" class="np-icon-btn" aria-label="بعدی"><i data-lucide="skip-back" class="w-5 h-5"></i></button>
+              <button id="npMute" class="np-icon-btn" aria-label="بی‌صدا"><i data-lucide="volume-2" class="w-5 h-5" id="muteIcon"></i></button>
+            </div>
+            <audio id="audioPlayer" preload="metadata"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         Location Section (بخش لوکیشن)
+         ============================================ -->
+    <section id="location" class="relative py-24 sm:py-32 bg-paper text-ink overflow-hidden">
+      <div class="absolute inset-0 pattern-overlay-light opacity-[0.04]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-eyebro-light opacity-0" data-animate>نشانی</span>
+          <h2 class="section-title-light opacity-0" data-animate>لوکیشن هیئت</h2>
+          <p class="section-subtitle-light opacity-0" data-animate>نشانی، مسیر و ساعات کاری هیئت ثارالله</p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8">
+          <!-- Map (3/5) -->
+          <div class="lg:col-span-3 opacity-0" data-animate>
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-gold/30 relative h-[400px] lg:h-full min-h-[400px]">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=51.3890%2C35.7560%2C51.4890%2C35.7860&layer=mapnik&marker=35.7710%2C51.4390"
+                class="w-full h-full"
+                style="border:0; min-height: 400px;"
+                loading="lazy"
+                title="نقشه موقعیت هیئت ثارالله"></iframe>
+              <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-lg text-ink text-sm font-semibold flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-blood"></i>
+                حسینیه ثارالله
+              </div>
+            </div>
+          </div>
+
+          <!-- Info (2/5) -->
+          <div class="lg:col-span-2 space-y-4 opacity-0" data-animate>
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+              <div>
+                <div class="info-label">نشانی کامل</div>
+                <div class="info-value">تهران، خیابان ولیعصر، نرسیده به میدان ونک، حسینیه ثارالله</div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="phone" class="w-5 h-5"></i></div>
+              <div>
+                <div class="info-label">تلفن تماس</div>
+                <div class="info-value" dir="ltr">۰۲۱-۸۸۱۲۳۴۵۶ · ۰۹۱۲-۱۲۳۴۵۶۷</div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="mail" class="w-5 h-5"></i></div>
+              <div>
+                <div class="info-label">ایمیل</div>
+                <div class="info-value" dir="ltr">info@tharullah.ir</div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="clock" class="w-5 h-5"></i></div>
+              <div>
+                <div class="info-label">ساعات کاری</div>
+                <div class="info-value">شنبه تا پنجشنبه، ۱۶ تا ۲۲</div>
+                <div class="info-sub">روزهای محرم: ۸ صبح تا ۱۲ شب</div>
+              </div>
+            </div>
+
+            <a href="https://www.openstreetmap.org/?mlat=35.7710&mlon=51.4390#map=16/35.7710/51.4390" target="_blank" rel="noopener" class="directions-btn">
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+              <span>مسیریابی به هیئت</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         Announcements Section (اطلاع‌رسانی)
+         ============================================ -->
+    <section id="announcements" class="relative py-24 sm:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black-soft to-black"></div>
+      <div class="absolute inset-0 pattern-overlay opacity-[0.025]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-eyebrow opacity-0" data-animate>برنامه‌ها</span>
+          <h2 class="section-title opacity-0" data-animate>اطلاع‌رسانی</h2>
+          <p class="section-subtitle opacity-0" data-animate>برنامه‌های پیش‌رو و اعلامیه‌های هیئت</p>
+        </div>
+
+        <div id="announcementsContainer">
+          <div class="loading-placeholder">
+            <div class="spinner mx-auto"></div>
+            <p>در حال بارگذاری اعلامیه‌ها...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         Contact Section (ارتباط با ما)
+         ============================================ -->
+    <section id="contact" class="relative py-24 sm:py-32 bg-paper text-ink overflow-hidden">
+      <div class="absolute inset-0 pattern-overlay-light opacity-[0.04]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-eyebro-light opacity-0" data-animate>در ارتباط باشید</span>
+          <h2 class="section-title-light opacity-0" data-animate>ارتباط با ما</h2>
+          <p class="section-subtitle-light opacity-0" data-animate>راه‌های ارتباطی هیئت ثارالله</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          <!-- Left: contact info -->
+          <div class="space-y-6 opacity-0" data-animate>
+            <div class="contact-info-card">
+              <h3 class="font-display text-2xl text-crimson-deep mb-6 font-bold">اطلاعات تماس</h3>
+
+              <div class="space-y-5">
+                <div class="flex items-start gap-4">
+                  <div class="contact-icon-wrap">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-ink-light mb-1">نشانی</div>
+                    <div class="text-ink font-medium leading-relaxed">تهران، خیابان ولیعصر، نرسیده به میدان ونک، حسینیه ثارالله</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="contact-icon-wrap">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-ink-light mb-1">تلفن‌های تماس</div>
+                    <div class="text-ink font-medium" dir="ltr">۰۲۱-۸۸۱۲۳۴۵۶</div>
+                    <div class="text-ink font-medium" dir="ltr">۰۹۱۲-۱۲۳۴۵۶۷۸</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="contact-icon-wrap">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-ink-light mb-1">ایمیل</div>
+                    <div class="text-ink font-medium" dir="ltr">info@tharullah.ir</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-gold/30">
+                <div class="text-xs text-ink-light mb-3">ما را در شبکه‌های اجتماعی دنبال کنید</div>
+                <div class="flex items-center gap-3">
+                  <a href="#" aria-label="تلگرام" class="social-icon"><i data-lucide="send" class="w-5 h-5"></i></a>
+                  <a href="#" aria-label="اینستاگرام" class="social-icon"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                  <a href="#" aria-label="ایمیل" class="social-icon"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                  <a href="#" aria-label="وب‌سایت" class="social-icon"><i data-lucide="globe" class="w-5 h-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: contact form (disabled) -->
+          <div class="opacity-0" data-animate>
+            <div class="relative contact-form-card">
+              <!-- Disabled overlay -->
+              <div class="contact-disabled-overlay">
+                <div class="text-center px-6 py-8">
+                  <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-crimson-deep/15 mb-4">
+                    <i data-lucide="mail-x" class="w-8 h-8 text-crimson-deep"></i>
+                  </div>
+                  <h3 class="font-display text-xl text-crimson-deep font-bold mb-2">
+                    ارسال پیام در حال حاضر ممکن نیست
+                  </h3>
+                  <p class="text-ink-muted text-sm leading-relaxed max-w-sm mx-auto">
+                    این بخش در حال توسعه است و به‌زودی فعال خواهد شد. تا آن زمان،
+                    لطفاً از طریق تلفن، ایمیل یا شبکه‌های اجتماعی با ما در ارتباط باشید.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Form (visually present but disabled) -->
+              <form class="space-y-4" aria-disabled="true" inert>
+                <div>
+                  <label class="form-label">نام و نام خانوادگی</label>
+                  <input type="text" class="form-input" placeholder="نام خود را وارد کنید" disabled />
+                </div>
+                <div>
+                  <label class="form-label">ایمیل</label>
+                  <input type="email" class="form-input" placeholder="example@email.com" dir="ltr" disabled />
+                </div>
+                <div>
+                  <label class="form-label">موضوع</label>
+                  <input type="text" class="form-input" placeholder="موضوع پیام" disabled />
+                </div>
+                <div>
+                  <label class="form-label">پیام</label>
+                  <textarea class="form-input" rows="4" placeholder="متن پیام خود را بنویسید..." disabled></textarea>
+                </div>
+                <button type="button" class="form-submit-btn" disabled>
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>ارسال پیام</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="relative bg-black overflow-hidden">
+    <div class="absolute inset-0 pattern-overlay opacity-[0.03]"></div>
+    <!-- Top mourning-flag stripe -->
+    <div class="h-1 bg-gradient-to-l from-blood via-gold to-blood"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <!-- About column -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="grid place-items-center w-10 h-10 rounded-full border border-gold/40 text-gold">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4" r="1.5"/>
+                <path d="M12 6v15"/>
+                <path d="M12 9l-4 2.5L12 14l4-2.5z" fill="currentColor" fill-opacity="0.3"/>
+              </svg>
+            </span>
+            <span class="font-calligraphy text-xl text-gold-light">هیئت ثارالله</span>
+          </div>
+          <p class="text-cream/60 text-sm leading-relaxed mb-4">
+            مراسم عزاداری سید و سالار شهیدان حضرت اباعبدالله الحسین (ع).
+            با آرزوی قبولی طاعات و عبادات شما.
+          </p>
+          <p class="font-calligraphy text-gold text-lg">السلام علیک یا ثارالله</p>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h4 class="font-display text-lg text-gold-light mb-4 font-bold">دسترسی سریع</h4>
+          <ul class="space-y-2">
+            <li><a href="#hero"        class="footer-link">خانه</a></li>
+            <li><a href="#about"       class="footer-link">درباره هیئت</a></li>
+            <li><a href="#activities"  class="footer-link">فعالیت‌ها</a></li>
+            <li><a href="#media"       class="footer-link">گالری رسانه</a></li>
+            <li><a href="#location"    class="footer-link">لوکیشن</a></li>
+            <li><a href="#contact"     class="footer-link">ارتباط با ما</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter + social -->
+        <div>
+          <h4 class="font-display text-lg text-gold-light mb-4 font-bold">در ارتباط باشید</h4>
+          <p class="text-cream/60 text-sm mb-4 leading-relaxed">
+            برای اطلاع از برنامه‌های پیش‌رو، ما را در شبکه‌های اجتماعی دنبال کنید.
+          </p>
+          <div class="flex items-center gap-3 mb-6">
+            <a href="#" aria-label="تلگرام" class="footer-social"><i data-lucide="send" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="اینستاگرام" class="footer-social"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="ایمیل" class="footer-social"><i data-lucide="mail" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="وب‌سایت" class="footer-social"><i data-lucide="globe" class="w-5 h-5"></i></a>
+          </div>
+          <a href="#hero" class="back-to-top">
+            <i data-lucide="arrow-up" class="w-4 h-4"></i>
+            <span>بازگشت به بالا</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-gradient-to-l from-transparent via-gold/30 to-transparent mb-6"></div>
+
+      <!-- Copyright -->
+      <div class="text-center">
+        <p class="text-cream/70 text-sm mb-1">تمامی حقوق برای هیئت ثارالله محفوظ است.</p>
+        <p class="text-gold/80 text-sm font-medium">© ۱۴۰۵</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       Unified Lightbox Modal (for all media types)
+       ============================================ -->
+  <div id="lightboxModal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="absolute inset-0 bg-black/95 backdrop-blur-sm" id="lightboxBackdrop"></div>
+
+    <!-- Close button -->
+    <button id="lightboxClose" class="absolute top-6 left-6 z-20 grid place-items-center w-12 h-12 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-black transition-all" aria-label="بستن">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Counter -->
+    <div id="lightboxCounter" class="absolute top-6 right-6 z-20 text-gold-light/80 text-sm font-medium tracking-wider"></div>
+
+    <!-- Navigation -->
+    <button id="lightboxPrev" class="absolute top-1/2 right-4 -translate-y-1/2 z-20 grid place-items-center w-12 h-12 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-black transition-all" aria-label="قبلی">
+      <i data-lucide="chevron-right" class="w-7 h-7"></i>
+    </button>
+    <button id="lightboxNext" class="absolute top-1/2 left-4 -translate-y-1/2 z-20 grid place-items-center w-12 h-12 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-black transition-all" aria-label="بعدی">
+      <i data-lucide="chevron-left" class="w-7 h-7"></i>
+    </button>
+
+    <!-- Content area -->
+    <div class="relative h-full flex items-center justify-center p-6 lg:p-12">
+      <div id="lightboxContent" class="max-w-5xl w-full"></div>
+    </div>
+
+    <!-- Caption -->
+    <div id="lightboxCaption" class="absolute bottom-6 inset-x-0 text-center text-cream text-sm px-6"></div>
+  </div>
+
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 translate-y-32 opacity-0 transition-all duration-300 z-[200] bg-black-soft text-gold-light px-6 py-3 rounded-lg border border-gold/40 shadow-2xl text-sm" aria-live="polite"></div>
+
+
+  <!-- Back-to-top FAB (always visible) -->
+  <button id="backToTop" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-gradient-to-br from-gold-dark to-gold text-black shadow-lg grid place-items-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 hover:shadow-[0_0_24px_rgba(212,175,55,0.6)]" aria-label="بازگشت به بالا">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
